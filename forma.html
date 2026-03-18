@@ -1,0 +1,78 @@
+
+<html>
+<head>
+   
+    <title>Ljekarna</title>
+
+    <style>
+        body {
+            background-color: #e6f2ff;
+            font-family: Arial;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 8px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Online ljekarna</h2>
+
+<form action="obradi.php" method="POST">
+
+<table>
+    <tr>
+        <th>Artikal</th>
+        <th>Količina</th>
+    </tr>
+    <tr>
+        <td>Andol</td>
+        <td><input type="number" name="andol" min="0" value="0"></td>
+    </tr>
+    <tr>
+        <td>Aspirin</td>
+        <td><input type="number" name="aspirin" min="0" value="0"></td>
+    </tr>
+    <tr>
+        <td>Vitamin C</td>
+        <td><input type="number" name="vitaminc" min="0" value="0"></td>
+    </tr>
+</table>
+
+<br>
+
+Kako ste saznali za nas:
+<select name="izvor">
+    <option value="TV reklama">TV reklama</option>
+    <option value="Halo oglasi">Halo oglasi</option>
+    <option value="Internet">Internet</option>
+</select>
+
+<br><br>
+
+Broj zdravstvene kartice:
+<input type="text" name="kartica" required>
+
+<br><br>
+
+Način plaćanja:
+<select name="placanje">
+    <option value="pouzece">Pouzećem</option>
+    <option value="direktno">Bankarstvo - direktan prijenos</option>
+    <option value="rate">Bankarstvo - rate</option>
+</select>
+
+<br><br>
+
+<input type="submit" value="Naruči">
+
+</form>
+
+</body>
+</html>
